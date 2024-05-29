@@ -1,64 +1,84 @@
+/* Общие стили для загадок */
 .riddles-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.riddle {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    width: 100%;
     max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .riddle {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     background-color: #f9f9f9;
-}
-
-.riddle h2 {
+  }
+  
+  .riddle h2 {
     margin-top: 0;
-}
-
-.riddle-image {
-    width: 100%;
+  }
+  
+  .riddle-image {
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.options button {
-    margin: 5px 0;
-    padding: 10px;
+  }
+  
+  .options button {
+    display: block;
     width: 100%;
-    background-color: #007BFF;
-    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+    background-color: #007bff;
+    color: white;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.options button:hover {
+  }
+  
+  .options button:hover {
     background-color: #0056b3;
-}
-
-.options button.selected {
-    background-color: #0056b3;
-}
-
-.correct {
+  }
+  
+  .options button.selected {
+    background-color: #28a745;
+  }
+  
+  .correct {
     color: green;
-    font-weight: bold;
-}
-
-.incorrect {
+  }
+  
+  .incorrect {
     color: red;
-    font-weight: bold;
-}
+  }
+  
+  /* Стили для формы добавления загадок */
+  .add-riddle-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-riddle-form input,
+  .add-riddle-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-riddle-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-riddle-form button:hover {
+    background-color: #0056b3;
+  }
+  
